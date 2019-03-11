@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   post '/users/sign_up', to: 'users#create'
   get '/users/login', to: 'users#login'
   post '/users/login', to: 'users#sign_in'
+
+  post '/tweets', to: 'tweets#create'
+
   get '/', to: 'home#index'
 end

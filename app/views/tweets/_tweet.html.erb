@@ -1,0 +1,10 @@
+<div class="container" style="padding-top: 20px">
+  <div class="card">
+    <div class="card-header">
+      <%= "#{current_user.firstname} #{current_user.lastname} on #{tweet.created_at.strftime("%F at %I:%M %p")}"%>
+    </div>
+    <div class="card-body">
+      <p class="card-text"><%= tweet.content %></p>
+    </div>
+  </div>
+</div>
